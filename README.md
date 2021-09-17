@@ -8,7 +8,7 @@
 
 The aim of this project is to create a simple calendar application that allows a user to save events for each hour of a business day by modifying using dynamically updated HTML and CSS powered by jQuery. This has taught me how to implement jQuery (specifically moment.js) and bootstrap in my everyday website development to reduce the amount of code I need to write. 
 
-link to the [site](https://raimeeab.github.io/day-planner/)
+Link to the [site](https://raimeeab.github.io/day-planner/)
 
 ## Technologies used
 
@@ -21,6 +21,7 @@ The current date and time is displayed on the screen, along with 'timeblocks' fr
 ## Contributors
 *The Univserity of Sydney | Trilogy Education Services*
 *Raimee Abbassi*
+
 ## License
 MIT License
 Copyright (c) [2021] [code-quiz]
