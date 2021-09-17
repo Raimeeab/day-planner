@@ -17,8 +17,11 @@ textarea {
   text-align: center;
   background-color: transparent;
   color: black;
-  border-radius: 0;
+  border-radius: 0.3rem;
   border-bottom: 10px solid black;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #E9ECEF;
 }
 
 .description {
@@ -68,4 +71,8 @@ textarea {
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+.task {
+  padding-left: 20px;
 }
