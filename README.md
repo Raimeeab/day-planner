@@ -12,11 +12,16 @@ Link to the [site](https://raimeeab.github.io/day-planner/)
 
 ## Technologies used
 
-HTML, CSS, JavaScript (jQuery) and Bootstrap
+- HTML
+- CSS
+- JavaScript
+- Bootstrap 
+- Jquery
+- Moment.js 
 
 ## Usage
 
-The current date and time is displayed on the screen, along with 'timeblocks' from 8am-6pm. Users can press on a timeblock and enter their tasks. Each timeblock is color coded to indicate whether it is in the past (grey), present (red) or future (green). All user input is saved into local storage for the user, so that each saved event persists when the user revisits the app. The user can also mark tasks as complete in the timeblock which will turn the check mark to green. 
+The current date and time is displayed on the screen, along with 'timeblocks' from 8am-6pm. Users can press on a timeblock and enter their tasks. Each timeblock is color coded to indicate whether it is in the past (grey), present (red) or future (green). The user can click on their desired timeblock, input their task and then press the save button. This will store the task into local storage, meaning each saved event persists when the user revisits the page.
 
 ## Contributors
 *The Univserity of Sydney | Trilogy Education Services*
@@ -24,7 +29,7 @@ The current date and time is displayed on the screen, along with 'timeblocks' fr
 
 ## License
 MIT License
-Copyright (c) [2021] [code-quiz]
+Copyright (c) [2021] [day-planner]
 Permission is herby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limiation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject following coditions: 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. 
 
