@@ -1,13 +1,13 @@
 // -------------------- Global variables --------------------------------
-var $text9AM = $("#text9AM");
-var $text10AM = $("#text10AM");
-var $text11AM = $("#text11AM");
-var $text12AM = $("#text12AM");
-var $text1PM = $("#text1PM");
-var $text2PM = $("#text2PM");
-var $text3PM = $("#text3PM");
-var $text4PM = $("#text4PM");
-var $text5PM = $("#text5PM");
+var $task9AM = $("#task9AM");
+var $task10AM = $("#task10AM");
+var $task11AM = $("#task11AM");
+var $task12AM = $("#task12AM");
+var $task1PM = $("#task1PM");
+var $task2PM = $("#task2PM");
+var $task3PM = $("#task3PM");
+var $task4PM = $("#task4PM");
+var $task5PM = $("#task5PM");
 
 // -------------------- Display current date ----------------------------
 var date = moment().format("dddd do MMM YYYY")
@@ -25,9 +25,11 @@ setInterval(function(){
 },1000);
 
 // -------------------- Save a Task --------------------------------------
+
 $(".saveButton").on("click", saveTask);
 
 function saveTask() {
+    console.log('saveTask called');
     localStorage.setItem("9AM", ($task9AM.val()));
     localStorage.setItem("10AM", ($task10AM.val()));
     localStorage.setItem("11AM", ($task11AM.val()));
