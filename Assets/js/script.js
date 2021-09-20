@@ -55,11 +55,13 @@ function timeTracker() {
         function() {
             var checkHour = $(this).parent().attr("id");
             console.log(checkHour);
-            // if < currentHour {
-            //     // addclass/removeclass 
-            // } else if === currentHour { 
-
-            // }
+            if (checkHour < currentHour) {
+                console.log("past");
+            } else if (checkHour === currentHour) {
+                console.log(present);
+            } else {
+                console.log("future");
+            };
         }
     )
     
