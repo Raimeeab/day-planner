@@ -16,7 +16,7 @@ Link to the [site](https://raimeeab.github.io/day-planner/)
 - CSS
 - JavaScript
 - Bootstrap 
-- Jquery
+- jQuery
 - Moment.js 
 
 ## Usage

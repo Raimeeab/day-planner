@@ -45,31 +45,36 @@ $("#15 .textValue").val(localStorage.getItem("15"));
 $("#16 .textValue").val(localStorage.getItem("16"));
 $("#17 .textValue").val(localStorage.getItem("17"));
 
-
 // -------------------- Time tracker ------------------------------------
 timeTracker();
 function timeTracker() { 
-    var currentHour = moment().hour().toString();
-    console.log(currentHour);
+    var currentHour = moment().hour();
     $(".timeBlock").each(
         function() {
             var checkHour = $(this).parent().attr("id");
-            console.log(checkHour);
+            checkHour = parseInt(checkHour);
             if (checkHour < currentHour) {
-                console.log("past");
                 $(this).siblings().addClass("past");
             } else if (checkHour === currentHour) {
-                console.log("present");
                 $(this).siblings().addClass("present");
             } else {
-                console.log("future");
                 $(this).siblings().addClass("future");
             };
         }
     )
-    
-    // for each timeblock we need to get the housr (currentHour)
-    // for every hour, test it inside loop to see if it's less "past", now "present" and great than "future"
 };
 
 // -------------------- Clear Planner -----------------------------------
+$(".clear").on("click", clearPlanner);
+
+function clearPlanner() {
+    $("#9 .textValue").val(localStorage.clear("9"));
+    $("#10 .textValue").val(localStorage.clear("10"));
+    $("#11 .textValue").val(localStorage.clear("11"));
+    $("#12 .textValue").val(localStorage.clear("12"));
+    $("#13 .textValue").val(localStorage.clear("13"));
+    $("#14 .textValue").val(localStorage.clear("14"));
+    $("#15 .textValue").val(localStorage.clear("15"));
+    $("#16 .textValue").val(localStorage.clear("16"));
+    $("#17 .textValue").val(localStorage.clear("17"));
+};
