@@ -49,7 +49,7 @@ $("#17 .textValue").val(localStorage.getItem("17"));
 // -------------------- Time tracker ------------------------------------
 timeTracker();
 function timeTracker() { 
-    var currentHour = moment().hour();
+    var currentHour = moment().hour().toString();
     console.log(currentHour);
     $(".timeBlock").each(
         function() {
@@ -60,8 +60,10 @@ function timeTracker() {
                 $(this).siblings().addClass("past");
             } else if (checkHour === currentHour) {
                 console.log("present");
+                $(this).siblings().addClass("present");
             } else {
                 console.log("future");
+                $(this).siblings().addClass("future");
             };
         }
     )
