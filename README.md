@@ -21,7 +21,7 @@ Link to the [site](https://raimeeab.github.io/day-planner/)
 
 ## Usage
 
-The current date and time is displayed on the screen, along with 'timeblocks' from 8am-6pm. Users can press on a timeblock and enter their tasks. Each timeblock is color coded to indicate whether it is in the past (grey), present (red) or future (green). The user can click on their desired timeblock, input their task and then press the save button. This will store the task into local storage, meaning each saved event persists when the user revisits the page.
+The current date and time is displayed on the screen, along with 'timeblocks' from 9am-5pm. Users can press on a timeblock and enter their tasks. Each timeblock is colour coded to indicate whether it is in the past (grey), present (green) or future (red). The user can click on their desired timeblock, input their task and then press the save button. This will store the task into local storage, meaning each saved event persists when the user revisits the page. The user is also able to clear their day planner by pressing the "clear all" button at the top of the page.
 
 ## Contributors
 *The Univserity of Sydney | Trilogy Education Services*
