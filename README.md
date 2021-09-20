@@ -2,7 +2,7 @@
 
 # day-planner
 ---
-![planner-demo](assets/images/day-plannerdemo.gif)
+![day-plannerdemo](https://user-images.githubusercontent.com/86146833/133974652-f5f85f55-5bcc-40ba-9e59-0c6823551b47.gif)
 
 ## Description
 
