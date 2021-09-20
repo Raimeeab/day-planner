@@ -57,8 +57,9 @@ function timeTracker() {
             console.log(checkHour);
             if (checkHour < currentHour) {
                 console.log("past");
+                $(this).siblings().addClass("past");
             } else if (checkHour === currentHour) {
-                console.log(present);
+                console.log("present");
             } else {
                 console.log("future");
             };
