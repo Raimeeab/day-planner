@@ -1,20 +1,20 @@
 // -------------------- Global variables --------------------------------
-var $task9AM = $("#task9AM");
-var $task10AM = $("#task10AM");
-var $task11AM = $("#task11AM");
-var $task12AM = $("#task12AM");
-var $task1PM = $("#task1PM");
-var $task2PM = $("#task2PM");
-var $task3PM = $("#task3PM");
-var $task4PM = $("#task4PM");
-var $task5PM = $("#task5PM");
+var task9AM = $("#9");
+var task10AM = $("#10");
+var task11AM = $("#11");
+var task12PM = $("#12");
+var task1PM = $("#13");
+var task2PM = $("#14");
+var task3PM = $("#15");
+var task4PM = $("#16");
+var task5PM = $("#17");
 
 // -------------------- Display current date ----------------------------
-var date = moment().format("dddd do MMM YYYY")
+var date = moment().format("dddd, MMMM Do, YYYY")
 $("#date-display").text(date);
 
 // -------------------- Display current time ----------------------------
-function currentTime () {
+function currentTime() {
     var time = moment().format("hh:mm:ss");
     $("#time-display").text(time);
 };
@@ -29,27 +29,42 @@ setInterval(function(){
 $(".saveButton").on("click", saveTask);
 
 function saveTask() {
-    console.log('saveTask called');
-    localStorage.setItem("9AM", ($task9AM.val()));
-    localStorage.setItem("10AM", ($task10AM.val()));
-    localStorage.setItem("11AM", ($task11AM.val()));
-    localStorage.setItem("12AM", ($task12AM.val()));
-    localStorage.setItem("13PM", ($task1PM.val()));
-    localStorage.setItem("14PM", ($task2PM.val()));
-    localStorage.setItem("15PM", ($task3PM.val()));
-    localStorage.setItem("16PM", ($task4PM.val()));
-    localStorage.setItem("17PM", ($task5PM.val()));
-}
-// $("#text9AM").append(localStorage.getItem("9AM"));
-// $("#text10AM").append(localStorage.getItem("10AM"));
-// $("#text11AM").append(localStorage.getItem("11AM"));
-// $("#text12AM").append(localStorage.getItem("12AM"));
-// $("#text1PM").append(localStorage.getItem("13PM"));
-// $("#text2PM").append(localStorage.getItem("14PM"));
-// $("#text3PM").append(localStorage.getItem("15PM"));
-// $("#text4PM").append(localStorage.getItem("16PM"));
-// $("#text5PM").append(localStorage.getItem("17PM"));
-console.log(saveTask);
+    var timeSelected = $(this).parent().attr("id");
+    var value = $(this).siblings(".textValue").val();
+    localStorage.setItem(timeSelected, ($(this).siblings(".textValue").val()));
+};
+
+// getItems and display on screen after page reload 
+$("#9 .textValue").val(localStorage.getItem("9"));
+$("#10 .textValue").val(localStorage.getItem("10"));
+$("#11 .textValue").val(localStorage.getItem("11"));
+$("#12 .textValue").val(localStorage.getItem("12"));
+$("#13 .textValue").val(localStorage.getItem("13"));
+$("#14 .textValue").val(localStorage.getItem("14"));
+$("#15 .textValue").val(localStorage.getItem("15"));
+$("#16 .textValue").val(localStorage.getItem("16"));
+$("#17 .textValue").val(localStorage.getItem("17"));
+
+
 // -------------------- Time tracker ------------------------------------
+timeTracker();
+function timeTracker() { 
+    var currentHour = moment().hour();
+    console.log(currentHour);
+    $(".timeBlock").each(
+        function() {
+            var checkHour = $(this).parent().attr("id");
+            console.log(checkHour);
+            // if < currentHour {
+            //     // addclass/removeclass 
+            // } else if === currentHour { 
+
+            // }
+        }
+    )
+    
+    // for each timeblock we need to get the housr (currentHour)
+    // for every hour, test it inside loop to see if it's less "past", now "present" and great than "future"
+};
 
 // -------------------- Clear Planner -----------------------------------
