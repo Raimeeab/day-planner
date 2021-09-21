@@ -27,7 +27,7 @@ setInterval(function(){
 // -------------------- Save Tasks --------------------------------------------
 
 // Event listener to save item to localStorage
-$(".saveButton").on("click", saveTask);
+$(".saveBtn").on("click", saveTask);
 
 function saveTask() {
     // Targets all parent elements with the ID attribute
