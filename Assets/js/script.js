@@ -50,7 +50,14 @@ $("#16 .textValue").val(localStorage.getItem("16"));
 $("#17 .textValue").val(localStorage.getItem("17"));
 
 // -------------------- Time tracker ------------------------------------------
+
 timeTracker();
+
+// Updates timeblock status every minute
+setInterval(function(){
+    timeTracker();
+},60000);
+
 function timeTracker() { 
     // Retrieves current time in hour 
     var currentHour = moment().hour(); 
