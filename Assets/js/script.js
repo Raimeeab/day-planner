@@ -53,10 +53,10 @@ $("#17 .textValue").val(localStorage.getItem("17"));
 
 timeTracker();
 
-// Updates timeblock status every minute
+// Updates timeblock status every second
 setInterval(function(){
     timeTracker();
-},60000);
+},1000);
 
 function timeTracker() { 
     // Retrieves current time in hour 
