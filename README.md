@@ -2,8 +2,7 @@
 
 # day-planner
 ---
-![day-plannerdemo](https://user-images.githubusercontent.com/86146833/133974652-f5f85f55-5bcc-40ba-9e59-0c6823551b47.gif)
-
+![day-planner-demo](https://github.com/Raimeeab/weather-dashboard/blob/main/assets/images/day-planner-demo.gif)
 ## Description
 
 The aim of this project is to create a simple calendar application that allows a user to save events for each hour of a business day by modifying using dynamically updated HTML and CSS powered by jQuery. This has taught me how to implement jQuery (specifically moment.js) and bootstrap in my everyday website development to reduce the amount of code I need to write. 
